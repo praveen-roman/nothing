@@ -1,0 +1,35 @@
+/* .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+}
+body{
+    background-color: rgb(251, 251, 251);
+} */
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top; /* Aligns products correctly */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+.product img {
+    width: 100%;  /* Ensures image fits inside */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Limits height */
+    display: block; /* Removes extra space under image */
+    margin: 0 auto; /* Centers the image */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
