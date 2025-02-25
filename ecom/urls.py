@@ -9,5 +9,6 @@ urlpatterns = [
 ]
 
 # Serve media files during development
-if settings.DEBUG:
+
+if settings.DEBUG:  # Django only serves media files when DEBUG=True
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
